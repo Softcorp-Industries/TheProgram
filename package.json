@@ -1,0 +1,15 @@
+{
+  "name": "theprogram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://softcorp-industries.github.io/theprogram",
+  "description": "",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
