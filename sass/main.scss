@@ -1,3 +1,62 @@
-* {
-    margin: 0;
-}
+@use "_header";
+@use "_theProgram";
+@use "_utils";
+@use "_banners";
+@use "_projects";
+@use "_tables";
+@use "_forms";
+
+
+/*.h2-outsideBoxL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transform: translate(-25%);
+    }
+    .h2-chevronL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transform: translate(75%);
+    }
+    .h2-midchevronL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+    }
+    .h2-outsideBoxR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        transform: translate(25%);
+    }
+    .h2-chevronR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        transform: translate(-75%);
+    }
+    .h2-midchevronR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%); 
+    }*/
+
+/*             Right Chevron Thick
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+                Right Chevron Thin
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+*/
+
+/*             left Chevron Thick
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                Left Chevron Thin
+clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+*/
+
+/*             left Triangle
+clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
+                Right Triangle
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
+*/

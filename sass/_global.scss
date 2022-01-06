@@ -1,0 +1,188 @@
+@use "_mixin" as *;
+
+:root {
+  --bgPrimary: #e3e3e3;
+  --bgDarkMode: #e3e3e3;
+  --bgSecondary: rgb(0, 0, 255);
+
+  --bgFilter: rgba(255, 255, 255, 0.2);
+  --bgFilterBlk: rgba(0, 0, 0, 0.4);
+  --bgFilterTheme: rgb(255, 255, 0);
+  --bgFilterBlkDrk: rgba(0, 0, 0, 0.8);
+  --bgFilterDrk: rgba(255, 255, 255, 0.8);
+
+  --black: black;
+  --white: white;
+
+  
+  --darkModeTxt: rgb(54, 54, 54);
+  --darkModeTxtOp: rgba(54, 54, 54, 0.6);
+  
+  --darkModeTxtlgt: #e3e3e3;
+  --darkModeTxtlgtOp: rgba(255, 255, 255, 0.7);
+  
+  --darkModeRadialGrade: radial-gradient(
+    rgb(0, 0, 0),
+    rgb(83, 83, 83)
+  );
+  --darkModeRadialGradeRev: radial-gradient(
+    rgb(110, 110, 110),
+    rgb(240, 240, 240)
+  );
+
+  --defaultThemeClr: rgb(54, 54, 54);
+  --htmlThemeClr: orangered;
+  --cssThemeClr: blue;
+  --sassThemeClr: pink;
+  --jsThemeClr: yellow;
+  --toggleTheme: rgb(54, 54, 54);
+  --themeTxtClr: rgb(255, 255, 0);
+  --themeTxtClrOp: rgba(225, 225, 0, 0.6);
+  --themeBg: rgb(255, 255, 0);
+  --themeSec: black;
+  --themeBgOp: rgba(255, 255, 0, 0.6);
+  --themeRadialGrade: radial-gradient(rgb(255, 255, 0), rgb(255, 255, 255));
+  --inputToggleThemeFilter: rgba(255, 255, 255, 0.2);
+  --inputToggleTheme: #c7c7c7;
+  --inputToggleTxt: rgb(54, 54, 54);
+  
+  --xsmSpacer: 0.25em;
+  --smSpacer: .5em;
+  --mdSpacer: 1em;
+  --lgSpacer: 1.5em;
+  --xlgSpacer: 2em;
+  --xxlgSpacer: 3em;
+  
+}
+
+body.transition,
+body.transition *,
+body.transition *:before,
+body.transition *:after {
+  transition: all 750ms;
+}
+
+body[data-darkMode="darkMode"] {
+  --darkModeBg: rgb(80, 80, 80);
+  --bgDarkMode: rgb(51, 51, 51);
+  --darkModeBgOp: rgba(255, 255, 255, 0.6);
+  --darkModeTxtClr: white;
+  --darkModeClrlgtOp: rgba(54, 54, 54, 0.6);
+  --darkModeRadialGradeRev: radial-gradient(
+    rgb(240, 240, 240),
+    rgb(110, 110, 110)
+  );
+  --themeTxtClr: white;
+  --darkModeSec: #e3e3e3;
+  --themeBg: black;
+  --themeSec: yellow;
+}
+
+body[data-toggleTheme="dark"] {
+  --inputToggleTheme: grey;
+  --inputToggleThemeFilter: var(--bgFilterBlkDrk);
+  --inputToggleTxt: var(--white);
+}
+/*
+body[data-theme="default"] {
+  --themeTxtClr: rgb(54, 54, 54);
+  --themeBdr: rgb(0, 0, 0);
+  --themeBgOp: rgba(255, 255, 255, 0.6);
+  --black: white;
+}
+
+
+body[data-theme="red"] {
+  --themeTxtClr: rgb(255, 69, 0);
+  --themeBdr: rgb(255, 69, 0);
+  --themeBgOp: rgba(255, 69, 0, 0.6);
+}
+body[data-theme="blue"] {
+  --themeTxtClr: rgb(22, 83, 252);
+  --themeBdr: rgb(22, 83, 252);
+  --themeBgOp: rgba(22, 83, 252, 0.6);
+}
+body[data-theme="pink"] {
+  --themeTxtClr: rgb(255, 192, 203);
+  --themeBdr: rgb(255, 192, 203);
+  --themeBgOp: rgba(255, 192, 203, 0.6);
+}
+body[data-theme="yellow"] {
+  --themeTxtClr: rgb(255, 255, 0);
+  --themeBdr: rgb(255, 255, 0);
+  --themeBgOp: rgba(255, 255, 0, 0.6);
+}
+*/
+body[data-toggleMode="default"] {
+  --toggleTheme: #e3e3e3;
+}
+body[data-toggleMode="htmlTheme"] {
+  --toggleTheme: rgb(255, 69, 0);
+}
+body[data-toggleMode="cssTheme"] {
+  --toggleTheme: rgb(22, 83, 252);
+}
+body[data-toggleMode="sassTheme"] {
+  --toggleTheme: rgb(255, 192, 203);
+}
+body[data-toggleMode="jsTheme"] {
+  --toggleTheme: rgb(255, 255, 0);
+}
+
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bedrock", sans-serif;
+  font-size: 10px;
+  background-color: var(--bgDarkMode);
+}
+
+p{
+  font-family: 'Bedrock';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Audiowide", cursive;
+}
+
+footer {
+  @include darkMode;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  padding: var(--spacer);
+  background-color: var(--darkModeBgOp);
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  color: var(--black);
+  border-radius: 1.5rem;
+  margin-bottom: 20px;
+}
+footer span {
+  color: red;
+}
+
+@media screen and (min-width: 310px) {
+}
+@media screen and (min-width: 400px) {
+}
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 700px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1200px) {
+}

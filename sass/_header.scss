@@ -1,0 +1,60 @@
+@use "_global" as *;
+@use "_mixin" as *;
+
+
+// DEVBAR ANIMATION WITH JS SCRIPT //
+// HIDE AND SHOW
+.devBar-list .listItem {
+  display: none; // hide
+}
+.openFrontEnd ~ .devBar-list .listItem {
+  display: block; // show
+}
+// SELECTORS WITH EVENT CLASS ADDED FROM JS SCRIPT
+.devBar-bar.openFrontEnd .devBar-bar__btn {
+  color: var(--darkModeBg);
+  background-color: var(--darkModeBgOp);
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  background-image: none;
+}
+// DEVBAR KEYFRAMES
+.openFrontEnd {
+  perspective: 1000px;
+  ~ .devBar-list .listItem {
+    opacity: 0;
+    transform-origin: center;
+  }
+  @for $i from 1 through 4 {
+    ~ .devBar-list .listItem:nth-child(#{$i}) {
+      animation: frontEnd 300ms ease-in forwards;
+      animation-delay: (150ms * $i) - 300ms;
+    }
+  }
+}
+@keyframes frontEnd {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@media (min-width: 320px) {
+  .devBar-list {
+    .listItem img {
+      min-width: 60px;
+    }
+}
+}
+@media (min-width: 400px) {
+}
+@media (min-width: 769px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+
+}
