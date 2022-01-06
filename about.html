@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon2.jpg" />
+    <title>Home Work</title>
+    <script type="module" src="main.js" defer></script>
+    <script src="js/buttons.js" defer></script>
+    <script src="js/audioPlayer.js" defer></script>
+</head>
+
+<body data-darkMode="light" data-theme="default">
+
+    <header>
+        <div class="themeToggles">
+            <div class="colorMode modeBtn">
+                <button id="colorModeBtn" class="colorModeBtn"></button>
+            </div>
+            <ul class="colorThemes">
+                <li class="themeDots" id="default" title="Default"></li>
+                <li class="themeDots" id="red" title="HTML Color Theme"></li>
+                <li class="themeDots" id="blue" title="CSS Color Theme"></li>
+                <li class="themeDots" id="pink" title="SASS Color Theme"></li>
+                <li class="themeDots" id="yellow" title="JavaScript Color Theme"></li>
+            </ul>
+            <div class="darkMode modeBtn">
+                <button id="darkModeBtn" class="toggle"></button>
+            </div>
+            <a class="topBtn" href="#hwPage">^</a>
+        </div>
+
+        <div class="navBar-container" id="navBarCont">
+            <nav class="navBarSite" aria-label="siteNav" title="Web Navigation">
+                <ul class="navBarSite__list">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a class="activePage" href="#">About</a></li>
+                    <li><a href="theprogram.html">The Program</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="navBarPage" aria-label="pageNav" title="Current Page Chapters">
+        <ul class="navBarPage__list" id="navBar">
+            <li><a href="#imgProject">Images</a></li>
+            <li><a href="#animationProject">Animations</a></li>
+            <li><a href="#buttonProject">Buttons</a></li>
+            <li><a href="#localStorageProject">ToDo</a></li>
+            <li><a href="#webPlayerProject">Web Players</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="about" id="about">
+            <section class="about__banner banner">
+              <div class="banner__top">
+                <div class="banner__top__img">
+                  <picture class="slide">
+                    <p>“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”
+                    </p>
+                    <h4>Malcolm X</h4>
+                  </picture>
+                </div>
+                <h1>Christopher T. Guy</h1>
+              </div>
+              <div class="banner__title">
+                <h2>About</h2>
+              </div>
+            </section>
+            <div class="about__bio">
+              <div class="profile">
+                <h3>Christopher T. Guy</h3>
+                <div class="seal1 seal"><img src="img/icon/red_seal-1.svg" alt=""></div>
+                <div class="seal2 seal"><img src="img/icon/AIT-logo3-300x200.png" alt=""></div>
+      
+                <div class="logo-bar__img">
+                  <img src="img/HTML5_logo.svg.png" alt="HTML Logo" width="100px">
+                  <img src="img/CSS.3b.svg.png" alt="CSS Logo" width="71px">
+                  <img src="img/Javascript-logo.svg.png" alt="javaScript Logo" width="90px">
+                </div>
+                <p class="p3">
+                  I started to write <span>"computer
+                    code"</span> and learn <span>"frontend web development"</span> at the
+                  age of 50.
+                  &#128525
+                </p>
+                <div class="p2">
+                  I'm a Certified <span>Red Seal</span> Electrician
+                </div>
+                <div class="profileImg">
+                  <img src="img/profile_img.jpg" alt="">
+                </div>
+                <div class="logo-bar2__img">
+                  <p>Coming Soon</p>
+                  <div class="imgs">
+                    <img src="img/icon/nodejs-square-200.png" alt="node-express">
+                    <img src="img/icon/mongodb.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="solar container">
+                <article class="solar__article">
+                  <p>I started in the electrical trade 2 days before my 20th birthday. </p>
+                  <p> I thought I was making a decision that I would never have to make again.</p>
+                  <p>That was 30 years ago!!!</p>
+                </article>
+                <picture class="solar__img">
+                  <h3>"Make hay while the sun shines"</h3>
+                </picture>
+                <article class="solar__article">
+                  <p>I worked construction for 30 years.</p>
+                  <p>I learned how to Organize, Plan and Build Construction Projects.</p>
+                  <p>I grew with my Industry.</p>
+                </article>
+              </div>
+              <div class="change container">
+                <p>The world was Changing.</p>
+                <p>I needed to change with it.</p>
+                <div class="change__img">
+                  <picture class=" change__img__1">
+                    <img src="img/tech_img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="">
+                  </picture>
+                  <picture class="change__img__2">
+                    <img src="img/tech_img/exclusive-OR-function-built.webp" alt="">
+                  </picture>
+                  <picture class="change__img__3">
+                    <img src="img/tech_img/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg" alt="">
+                  </picture>
+                </div>
+                <p>HOW?</p>
+                <div class="change__img2">
+                  <picture class="change__img2__5">
+                    <img src="img/tech_img/jerry-wang-jfnUC7s3iuw-unsplash.jpg" alt="">
+                  </picture>
+                  <picture class="change__img2__4">
+                    <img src="img/tech_img/69bfd52bbd063c93940798932ca470d7.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+      
+              <div class="growth container">
+                <div class="p1">
+                  <h3> "Get with the Program"</h3>
+                  <p>That was the saying when I was a teenager.</p>
+                </div>
+                <div class="quote">
+                  <img src="img/tech_img/growth.jpg" alt="">
+                </div>
+                <div class="p2">
+                  <h3>"Learn to Code"</h3>
+                  <p>This is the saying I hear now.</p>
+                </div>
+              </div>
+              <div class="rome container">
+                <p>So I Listened...</p>
+                <article class="rome__article">
+                  <h3>
+                    "All roads lead to Rome"
+                  </h3>
+                  <p class="p1">
+                    "The Program"
+                  </p>
+                  <p class="p2">
+                    "Home Work"
+                  </p>
+                </article>
+                <p>I Started to "Code" and Made my Own "Program"</p>
+              </div>
+              <div class="why container">
+                <p>Hello World</p>
+                <article class="why__article">
+                  <p>
+                    The Industry I worked in for 20 years crashed a few years ago. I wasn't so upset that the Industry was
+                    changing
+                    but rather the loss of jobs and unemployment was devistating to many people in my area. I lost my job
+                    too...
+                  </p>
+                  <P>
+                    Going back to school at 50 was not an option, I didn't even know what to study.
+                  </P>
+                  <P>
+                    I was completely lost, I just knew that "Technology and the Internet" was the Future. Where in
+                    technology was one question, and how do I earn a living on the Internet was a completely different one.
+                  </P>
+                  <P>
+                    By chance I came across a video on YouTube with this person giving a tutorial on HTML.
+                  </P>
+                  <br>
+                  <p>POOF</p>
+                  <p>The answer was "BOTH"</p>
+                  <br>
+                  <p>
+                    I learned the basics of HTML and CSS with-in a few weeks. I spent probably another month going a little
+                    more in-depth on both, then well, javaScript was the next logical.
+                  </p>
+      
+                </article>
+                <div class="missionStatement">
+                  <h2>"Self-taught"</h2>
+                  <p>Get with <span>"The Program"</span></p>
+                  <p>Learn To <span>"Code"</span></p>
+                </div>
+                <h4>My Only Option</h4>
+                <h2>Final Exam</h2>
+                <div class="why__summary">
+                  <P>
+                    Now I build things on the Internet.
+                  </P>
+                  <P>
+                    My tools just changed.
+                  </P>
+                  <h1>Thank You</h1>
+                </div>
+              </div>
+            </div>
+            <div class="about__contactModal">
+              <button type="button">Contact</button>
+            </div>
+          </section>
+    </main>
+    <div class="spacer"></div>
+    <footer>Copyright &copy; 2021, Christopher T. Guy <span>O/A</span> Guycorp Industries</footer>
+</body>
+
+</html>
