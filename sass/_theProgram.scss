@@ -1,127 +1,6 @@
 @use "_global" as *;
 @use "_mixin" as *;
 
-
-
-.cardBox {
-  width: 90%;
-  max-width: 450px;
-}
-.card {
-  display: grid;
-  margin: auto;
-  height: 200px;
-  gap: 0.5rem;
-  box-shadow: 0px 0px 5px var(--darkModeTxtClr);
-  border-radius: 0.5rem;
-  .profileImg {
-    width: 80px;
-    height: 80px;
-    margin: 0.5rem;
-    img {
-      border-radius: 50%;
-      width: 100%;
-      height: 100%;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      color: var(--darkModeBg);
-    }
-  }
-  .profileCard-info {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--darkModeTxtClr);
-    padding: 0.25rem;
-  }
-  .profileCard-info span {
-    margin: 0.2rem 0;
-  }
-}
-.tripleMonitors {
-  padding: var(--mdSpacer) 0em;
-  background-color: var(--bgDarkMode);
-  max-width: 800px;
-  margin: auto;
-  h2{
-    color: var(--darkModeTxtClr);
-    padding: 1em;
-    font-family: "bedrock";
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
-  h2:nth-last-child(1){
-    text-align: right;
-  }
-  span{
-    font-size: 28px;
-    font-family: "audiowide";
-    letter-spacing: 4px;
-    color: var(--jsThemeClr);
-    text-shadow: 0px 0px 3px var(--black);
-  }
-  .imgs {
-    margin: auto;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    max-width: 800px;
-    border-radius: 1.5rem;
-    .img {
-      perspective: 200px;
-      width: calc(8vw + 8em);
-      height: calc(5vw + 5em);
-      img,
-      iframe {
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
-        border: 2px solid var(--black);
-      }
-      iframe {
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
-      }
-    }
-    .img1 {
-      z-index: 1;
-      iframe,
-      img {
-        perspective-origin: right;
-        transform-origin: right;
-        transform: rotateY(12deg);
-        border-radius: 0.5rem 5px 5px 0.5rem;
-        box-shadow: 0px -5px 5px var(--darkModeTxt), 0px 5px 5px var(--darkModeTxt),
-          -5px 0px 5px var(--darkModeTxt);
-      }
-    }
-    .img2 {
-      iframe,
-      img {
-        perspective-origin: center;
-        box-shadow: 0px -5px 5px var(--darkModeTxt), 0px 5px 5px var(--darkModeTxt);
-        border-radius: 5px;
-      }
-    }
-    .img3 {
-      z-index: 1;
-      iframe,
-      img {
-        perspective-origin: left;
-        transform-origin: left;
-        transform: rotateY(-12deg);
-        border-radius: 5px 0.5rem 0.5rem 5px;
-        box-shadow: 0px -5px 5px var(--darkModeTxt), 0px 5px 5px var(--darkModeTxt),
-          5px 0px 5px var(--darkModeTxt);
-      }
-    }
-  }
-}
-
 .featureHeader {
   //@include shadowSm;
   text-align: center;
@@ -150,54 +29,18 @@
     letter-spacing: 4px;
   }
 }
-.missionStatement {
-  text-align: center;
-  margin: 50px auto;
-  width: 90%;
-  max-width: 350px;
-  border-radius: 1rem;
-  letter-spacing: 2px;
-  background-color: var(--themeBg);
-  border: 2px solid var(--themeSec);
-  h2 {
-    font-family: "audiowide", cursive;
-    font-size: 24px;
-    line-height: 1.75em;
-    letter-spacing: 4px;
-    color: var(--themeSec);
-  }
-  p {
-    margin: 5px;
-    font-size: 12px;
-    line-height: 1.5em;
-    font-weight: 600;
-    color: var(--darkModeTxtClr);
-    span {
-      font-size: 18px;
-      //text-shadow: 0px 0px 2px var(--black);
-      font-family: "audiowide", cursive;
-      color: var(--themeSec);
-      font-weight: 900;
-    }
-  }
-}
+
+
 @media screen and (min-width: 310px) {
 }
 @media screen and (min-width: 400px) {
-  .missionStatement{
-    p{
-      font-size: 14px;
-      span{
-        font-size: 22px;
-      }
-    }
-  }
+  
   .tripleMonitors{
     h2{
       font-size: 2em;
     }
     .imgs{
-padding: 3em;
+      padding: 3em;
     }
   }
 }

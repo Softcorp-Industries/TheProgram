@@ -1,47 +1,38 @@
 @use "_mixin" as *;
 
 :root {
-  --bgPrimary: #e3e3e3;
-  --bgDarkMode: #e3e3e3;
-  --bgSecondary: rgb(0, 0, 255);
+  // no change
+  --primaryBg: #e3e3e3;
+  --secondaryClr: purple;
+  --secondaryTxt: #C0FFF4;
 
-  --bgFilter: rgba(255, 255, 255, 0.2);
-  --bgFilterBlk: rgba(0, 0, 0, 0.4);
-  --bgFilterTheme: rgb(255, 255, 0);
-  --bgFilterBlkDrk: rgba(0, 0, 0, 0.8);
-  --bgFilterDrk: rgba(255, 255, 255, 0.8);
+  --bgGradient: linear-gradient(to left top, var(--secondaryTxt), var(--secondaryClr));
 
-  --black: black;
-  --white: white;
-
-  
-  --darkModeTxt: rgb(54, 54, 54);
-  --darkModeTxtOp: rgba(54, 54, 54, 0.6);
-  
-  --darkModeTxtlgt: #e3e3e3;
-  --darkModeTxtlgtOp: rgba(255, 255, 255, 0.7);
-  
-  --darkModeRadialGrade: radial-gradient(
-    rgb(0, 0, 0),
-    rgb(83, 83, 83)
-  );
-  --darkModeRadialGradeRev: radial-gradient(
-    rgb(110, 110, 110),
-    rgb(240, 240, 240)
-  );
-
-  --defaultThemeClr: rgb(54, 54, 54);
+  --jsThemeClr: yellow;
   --htmlThemeClr: orangered;
   --cssThemeClr: blue;
   --sassThemeClr: pink;
-  --jsThemeClr: yellow;
-  --toggleTheme: rgb(54, 54, 54);
+  
   --themeTxtClr: rgb(255, 255, 0);
-  --themeTxtClrOp: rgba(225, 225, 0, 0.6);
+  --defaultThemeClr: rgb(54, 54, 54);
+  
   --themeBg: rgb(255, 255, 0);
   --themeSec: black;
-  --themeBgOp: rgba(255, 255, 0, 0.6);
-  --themeRadialGrade: radial-gradient(rgb(255, 255, 0), rgb(255, 255, 255));
+  --themeBlk: whitesmoke;
+  --themeWht: black;
+  
+  --darkModeBg: #e3e3e3;
+  --darkModeTxtClr: rgb(54, 54, 54);
+  --darkModeTxtlgt: #e3e3e3;
+  
+  --bgFilter: rgba(255, 255, 255, 0.2);
+  --bgFilterBlk: rgba(0, 0, 0, 0.4);
+  --bgFilterBlkDrk: rgba(0, 0, 0, 0.8);
+  --bgFilterDrk: rgba(255, 255, 255, 0.8);
+  
+  --black: black;
+  --white: white;
+  
   --inputToggleThemeFilter: rgba(255, 255, 255, 0.2);
   --inputToggleTheme: #c7c7c7;
   --inputToggleTxt: rgb(54, 54, 54);
@@ -140,8 +131,7 @@ body[data-toggleMode="jsTheme"] {
 }
 
 body {
-  font-family: "Bedrock", sans-serif;
-  font-size: 10px;
+  
   background-color: var(--bgDarkMode);
 }
 
@@ -177,12 +167,25 @@ footer span {
 @media screen and (min-width: 310px) {
 }
 @media screen and (min-width: 400px) {
+  body{
+    font-size: 20px;
+  }
 }
-@media screen and (min-width: 481px) {
+
+@media screen and (min-width: 550px) {
+  body{
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 700px) {
+  body{
+    font-size: 28px;
+  }
 }
 @media screen and (min-width: 1024px) {
+  body{
+    font-size: 32px;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

@@ -1,52 +1,39 @@
 @use "_global" as *;
 @use "_mixin" as *;
 
-.bannerMain {
+.landing {
   &__top {
-    z-index: 1;
-    position: relative;
-    height: 55vw;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-    margin-bottom: -7vw;
     background-image: url("img/tech_img/imgix-1500.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
-    //background-origin: center;
-    h1 {
-      position: absolute;
-      bottom: calc(7vw - 1em);
-      right: 4%;
-      transform: rotate(-3.8deg);
-      font-family: "Audiowide", cursive;
-      font-size: 1.5em;
-      color: var(--black);
-      margin-bottom: 0;
-      padding-bottom: 10px;
-      letter-spacing: 2px;
-      text-shadow: 0px 0px 10px var(--white);
-    }
+    z-index: 1;
+    position: relative;
+    height: 55vw;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+    margin-bottom: -7vw;
   }
   &__title {
     position: relative;
     height: calc(5vw + 5em);
     width: 100%;
     z-index: 0;
-    background-image: url("img/background_2.png");
+    background-image: linear-gradient(to left top, #C0FFF4, var(--secondaryClr));
+    //background-image: url("img/backgrounds/header_background_2.png");
     background-size: cover;
     background-position: top;
-    background-color: rgb(70, 70, 70);
-    border-bottom: 3px solid var(--jsThemeClr);
-    box-shadow: 0px 3px 3px rgb(70, 70, 70); 
-    h2 {
+    background-color: var(--themeBlk);
+    border-bottom: 3px solid var(--secondaryClr);
+    box-shadow: 0px 3px 3px rgb(70, 70, 70);
+    h1 {
       position: absolute;
       width: 100%;
       text-align: center;
-      bottom: 10px;
-      color: var(--jsThemeClr);
+      bottom: 0.75em;
       font-weight: 900;
-      font-size: calc(2vw + 1em);
+      color: var(--white);
+      font-size: 1.2em;
       letter-spacing: 0.25em;
       text-shadow: 0px 0px 7px var(--black);
     }
@@ -135,100 +122,9 @@
   text-shadow: 0px 0px 5px var(--black);
   letter-spacing: 2px;
 }
-/*
-.homeWork-top {
-  z-index: 1;
-    position: relative;
-    height: 45vw;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-    margin-bottom: -7vw;
-  background-image: url("img/tech_img/mwesigwa-joel-1500.jpg");
-  background-size: cover;
-  background-position: center;
-  h1 {
-    position: absolute;
-      bottom: calc(7vw - 1em);
-      right: 4%;
-      transform: rotate(-3.8deg);
-      font-family: "Audiowide", cursive;
-      font-size: 1.5em;
-      color: var(--themeTxtClr);
-      margin-bottom: 0;
-      padding-bottom: 10px;
-      letter-spacing: 2px;
-      text-shadow: 0px 0px 10px var(--black);
-  }
-}
-.homeWork-title {
-  position: relative;
-    height: calc(5vw + 5em);
-    width: 100%;
-    background-color: var(--bgPrimary);
-    z-index: 0;
-  background-image: url("img/background_2.png");
-  background-size: cover;
-  background-position: center;
-  h2{
-    position: absolute;
-      width: 100%;
-      text-align: center;
-      top: calc(1vw + 1.75em);
-      //font-family: "Audiowide";
-      color: var(--darkModeTxt);
-      font-size: calc(2vw + 1em);
-      letter-spacing: 0.25em;
-      //text-shadow: 0px 0px 7px var(--black);
-  }
-}
-
-.program-top {
-  z-index: 1;
-    position: relative;
-    height: 45vw;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-    margin-bottom: -7vw;
-  
-  background-size: cover;
-  background-position: center;
-  h1 {
-    position: absolute;
-      bottom: calc(7vw - 1em);
-      right: 4%;
-      transform: rotate(-3.8deg);
-      font-family: "Audiowide", cursive;
-      font-size: 1.5em;
-      color: var(--themeTxtClr);
-      margin-bottom: 0;
-      padding-bottom: 10px;
-      letter-spacing: 2px;
-      text-shadow: 0px 0px 10px var(--black);
-  }
-}
-.program-title {
-  position: relative;
-    height: calc(5vw + 5em);
-    width: 100%;
-    background-color: var(--bgPrimary);
-    z-index: 0;
-  background-image: url("img/background_2.png");
-  background-size: cover;
-  background-position: center;
-  h2{
-    position: absolute;
-      width: 100%;
-      text-align: center;
-      top: calc(1vw + 1.75em);
-      //font-family: "Audiowide";
-      color: var(--darkModeTxt);
-      font-size: calc(2vw + 1em);
-      letter-spacing: 0.25em;
-      //text-shadow: 0px 0px 7px var(--black);
-  }
-}
-*/
 
 @media screen and (min-width: 310px) {
-  .bannerMain {
+  .landing {
     &__top {
       h1{
         font-size: 1.5em;
@@ -239,9 +135,14 @@
 }
 
 @media screen and (min-width: 400px) {
-  .bannerMain{
+  .landing{
+    &__top{
+      h2{
+        font-size: .8em;
+      }
+    }
     &__title{
-      height: calc(6vw + 6em);
+      height: calc(4vw + 4em);
     }
   }
   .banner {
@@ -252,7 +153,7 @@
 }
 
 @media screen and (min-width: 500px) {
-  .bannerMain {
+  .landing {
     &__top{
       background-position: center;
       background-size: cover;
@@ -261,7 +162,7 @@
         }
       }
     &__title {
-      height: calc(6vw + 6em);
+      //height: calc(6vw + 6em);
       h2 {
         letter-spacing: 0.25em;
       }
@@ -277,7 +178,17 @@
 }
 
 @media screen and (min-width: 700px) {
-  
+  .landing {
+    &__top {
+      background-size: cover;
+      background-position: center;
+    }
+    &__title{
+      h1{
+        font-size: 1.7em;
+      }
+    }
+  }
   .banner {
     &__top{
       height: 13vw;
@@ -299,7 +210,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .bannerMain {
+  .landing {
     &__top {
       height: 40vw;
     }
@@ -322,7 +233,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .bannerMain {
+  .landing {
     &__title {
       height: 200px;
     }

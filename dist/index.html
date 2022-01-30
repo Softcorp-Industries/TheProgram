@@ -19,67 +19,68 @@
         <div class="darkMode" id="darkMode">
             <button id="darkModeBtn" class="dmToggle"></button>
         </div>
-        <div class="navBarBtn">
-            <div class="navBarBtn-menu">
-                <div class="navBarBtn-menu__btn"></div>
+        <div class="navBtn">
+            <div class="navBtn__menu">
+              <div class="navBtn__menu__btn"></div>
             </div>
-            <ul class="navBarBtn-list">
-                <h1 class="cHeader">Chapters</h1>
-                <li class="listItem">
-                    <a href="#forms">Forms</a>
-                </li>
-                <li class="listItem">
-                    <a href="#tables">Tables</a>
-                </li>
-                <li class="listItem">
-                    <a href="#uiForms">UI Forms</a>
-                </li>
-                <li class="listItem">
-                    <a href="#profileCards">Profile Cards</a>
-                </li>
-                <li class="listItem">
-                    <a href="#workOrder">Work Order</a>
-                </li>
+          </div>
+          <nav id="siteNav" class="siteNav" aria-label="siteNav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
-        </div>
-        <nav id="navBarSite" class="navBarSite" aria-label="siteNav" title="Web Navigation">
-            <ul class="navBarSite__list">
-                <li><a href="https://guycorpindustries.github.io/Portfolio/">Home</a></li>
-                <li><a href="https://guycorpindustries.github.io/HomeWork/">Home Work</a></li>
-                <li><a class="activePage" href="#">The Program</a></li>
+          </nav>
+          <nav class="pageNav" aria-label="pageNav">
+            <ul id="pageNav-list" class="pageNav-list">
+              <p class="cHeader">Chapters</p>
+              <li class="pageNav-listItem"><a href="#forms">Forms</a></li>
+              <li class="pageNav-listItem"><a href="#tables">Tables</a></li>
+              <li class="pageNav-listItem"><a href="#uiForms">U.I. Forms</a></li>
+              <li class="pageNav-listItem"><a href="#profileCards">Profile Forms</a></li>
             </ul>
-        </nav>
-        <section class="bannerMain">
-            <div class="bannerMain__top">
-                <h2 id="greeting" class="greeting">Welcome</h2>
-                <h1>
-                    Christopher T. Guy
-                </h1>
+          </nav>
+        <section class="landing">
+            <div class="landing__top">
+                <p id="greeting" class="greeting">Welcome</p>
             </div>
-            <div class="bannerMain__title">
-                <h2>"The Program"</h2>
-            </div>
+            <article class="landing__title">
+                <h1>"The Program"</h1>
+            </article>
         </section>
     </header>
+    <section class="welcome">
+        <header class="featureHeader">
+            <h2>"Softcorp Industries"</h2>
+          </header>
+        <article class="welcome__header">
+            <p>
+            Welcome to the <span>"The Program"</span> web site, the third of three
+            web sites that I'm building on my path to becoming a Front-End Web
+            Developer. I've created this page to expand on more complex javaScript and pseudo database senarios.
+            </p>
+      </article>
+    </section>
+    <section class="triple-container">
+        <div class="tripleMonitors">
+            <h2>Get with <span>"The Program"</span></h2>
+            <section class="imgs">
+                <picture class="img1 img">
+                    <img src="img/tech_img/annie-spratt-500px.jpg" alt="">
+                </picture>
+                <picture class="img2 img">
+                    <img src="img/tech_img/dollar-gill-500px.jpg" alt="">
+                </picture>
+                <picture class="img3 img">
+                    <img src="img/tech_img/monika-kozub-500px.jpg" alt="">
+                </picture>
+            </section>
+            <h2>Learn to <span>"Code"</span></h2>
+        </div>
+    </section>
 
     <main>
         
-        <section class="tripleMonitors">
-            <h2>Get with <span>"The Program"</span></h2>
-            <div class="imgs">
-              <picture class="img1 img">
-                <img src="img/tech_img/annie-spratt-500px.jpg" alt="">
-              </picture>
-              <picture class="img2 img">
-                <img src="img/tech_img/dollar-gill-500px.jpg" alt="">
-              </picture>
-              <picture class="img3 img">
-                <img src="img/tech_img/monika-kozub-500px.jpg" alt="">
-              </picture>
-            </div>
-            <h2>Learn to <span>"Code"</span></h2>
-        </section>
-
         <div class="project__header">
             <div class="project__header__title">
                 <h2>New User Sign Up</h2>
