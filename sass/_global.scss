@@ -5,6 +5,8 @@
   --primaryBg: #e3e3e3;
   --secondaryClr: purple;
   --secondaryTxt: #C0FFF4;
+  --txtChange: #C0FFF4;
+
 
   --bgGradient: linear-gradient(to left top, var(--secondaryTxt), var(--secondaryClr));
 
@@ -54,6 +56,7 @@ body.transition *:after {
 }
 
 body[data-darkMode="darkMode"] {
+  
   --darkModeBg: rgb(80, 80, 80);
   --bgDarkMode: rgb(51, 51, 51);
   --darkModeBgOp: rgba(255, 255, 255, 0.6);
@@ -67,6 +70,8 @@ body[data-darkMode="darkMode"] {
   --darkModeSec: #e3e3e3;
   --themeBg: black;
   --themeSec: yellow;
+  --txtChange: purple;
+
 }
 
 body[data-toggleTheme="dark"] {
@@ -129,7 +134,9 @@ body[data-toggleMode="jsTheme"] {
   margin: 0;
   box-sizing: border-box;
 }
-
+.darkModeFilter {
+  background-color: var(--bgFilterBlk);
+}
 body {
   
   background-color: var(--bgDarkMode);
@@ -183,9 +190,6 @@ footer span {
   }
 }
 @media screen and (min-width: 1024px) {
-  body{
-    font-size: 32px;
-  }
 }
 @media screen and (min-width: 1200px) {
 }

@@ -2,42 +2,50 @@
 @use "_mixin" as *;
 
 .landing {
-  &__top {
-    background-image: url("img/tech_img/imgix-1500.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    z-index: 1;
-    position: relative;
-    height: 55vw;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-    margin-bottom: -7vw;
-  }
-  &__title {
-    position: relative;
-    height: calc(5vw + 5em);
-    width: 100%;
-    z-index: 0;
-    background-image: linear-gradient(to left top, #C0FFF4, var(--secondaryClr));
-    //background-image: url("img/backgrounds/header_background_2.png");
-    background-size: cover;
-    background-position: top;
-    background-color: var(--themeBlk);
-    border-bottom: 3px solid var(--secondaryClr);
-    box-shadow: 0px 3px 3px rgb(70, 70, 70);
-    h1 {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      bottom: 0.75em;
-      font-weight: 900;
+  //padding-top: 1em;
+  background-image: url("img/tech_img/imgix-1500.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+.welcome {
+  p {
+      padding: 3em;
+      line-height: 1.4;
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      span {
+        font-size: 1.75em;
+        color: var(--txtChange);
+        text-shadow: 0px 0px 2px var(--darkModeTxtClr);
+        font-family: "Audiowide";
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+    }
+    &__header {
+      margin: auto;
+      width: 95%;
+      max-width: 800px;
       color: var(--white);
-      font-size: 1.2em;
-      letter-spacing: 0.25em;
-      text-shadow: 0px 0px 7px var(--black);
+      text-shadow: 0px 0px 3px black;
+      
     }
   }
+.title {
+  padding-top: .25em;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  text-shadow: 0px 0px 7px var(--black);
+  color: var(--secondaryTxt);
+  font-weight: 900;
+  font-size: 2.75em;
+  font-family: "The Nautigal";
+  letter-spacing: 2px;
 }
 .banner {
   &__top {
@@ -114,37 +122,20 @@
 }
 .greeting {
   width: 100%;
-  padding: 4em 0;
+  padding: 1em 0;
   text-align: center;
-  font-size: 18px;
-  font-family: "Bedrock";
-  color: var(--jsThemeClr);
-  text-shadow: 0px 0px 5px var(--black);
+  font-size: 1em;
+  font-family: 'Audiowide';
+  color: #C0FFF4;
+  text-shadow: 0px 0px 3px var(--black);
   letter-spacing: 2px;
 }
 
 @media screen and (min-width: 310px) {
-  .landing {
-    &__top {
-      h1{
-        font-size: 1.5em;
-        padding-bottom: 10px;
-      }
-    }
-  }
+  
 }
 
 @media screen and (min-width: 400px) {
-  .landing{
-    &__top{
-      h2{
-        font-size: .8em;
-      }
-    }
-    &__title{
-      height: calc(4vw + 4em);
-    }
-  }
   .banner {
     &__top {
       height: 15vw;
@@ -153,21 +144,7 @@
 }
 
 @media screen and (min-width: 500px) {
-  .landing {
-    &__top{
-      background-position: center;
-      background-size: cover;
-        h1{
-          font-size: 2em;
-        }
-      }
-    &__title {
-      //height: calc(6vw + 6em);
-      h2 {
-        letter-spacing: 0.25em;
-      }
-    }
-  }
+  
   .banner {
     &__title {
       h2 {
@@ -178,17 +155,7 @@
 }
 
 @media screen and (min-width: 700px) {
-  .landing {
-    &__top {
-      background-size: cover;
-      background-position: center;
-    }
-    &__title{
-      h1{
-        font-size: 1.7em;
-      }
-    }
-  }
+  
   .banner {
     &__top{
       height: 13vw;
@@ -204,31 +171,23 @@
       max-height: 130px;
     }
   }
-  .greeting{
-    font-size: 26px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .landing {
-    &__top {
-      height: 40vw;
+      .title {
+        font-size: 4.5em;
+      }
     }
-    &__title {
-      height: 175px;
-      font-size: calc(1.75vw + 1em);
-      bottom: 20px;
+    .greeting {
+      font-size: 1.2em;
     }
-  }
   .banner {
     &__title {
       h2 {
         bottom: calc(0.3vw + 0.2em);
       }
     }
-  }
-  .greeting{
-    font-size: 32px;
   }
 }
 

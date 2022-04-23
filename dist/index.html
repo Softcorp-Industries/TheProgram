@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Roboto:ital,wght@0,500;0,700;0,900;1,300&family=The+Nautigal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>The Program</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon2.jpg" />
     <link rel="stylesheet" type="text/css" href="main.css" />
@@ -15,52 +17,43 @@
 </head>
 <body data-darkMode="light" data-theme="default">
 
-    <header>
-        <div class="darkMode" id="darkMode">
-            <button id="darkModeBtn" class="dmToggle"></button>
-        </div>
-        <div class="navBtn">
-            <div class="navBtn__menu">
-              <div class="navBtn__menu__btn"></div>
+    <header class="landing">
+        <section id="darkModeLanding">
+            <div class="darkMode" id="darkMode">
+                <button id="darkModeBtn" class="dmToggle"></button>
             </div>
-          </div>
-          <nav id="siteNav" class="siteNav" aria-label="siteNav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </nav>
-          <nav class="pageNav" aria-label="pageNav">
-            <ul id="pageNav-list" class="pageNav-list">
-              <p class="cHeader">Chapters</p>
-              <li class="pageNav-listItem"><a href="#forms">Forms</a></li>
-              <li class="pageNav-listItem"><a href="#tables">Tables</a></li>
-              <li class="pageNav-listItem"><a href="#uiForms">U.I. Forms</a></li>
-              <li class="pageNav-listItem"><a href="#profileCards">Profile Forms</a></li>
-            </ul>
-          </nav>
-        <section class="landing">
-            <div class="landing__top">
+            <div class="navBtn">
+                <div class="navBtn__menu">
+                <div class="navBtn__menu__btn"></div>
+                </div>
+            </div>
+            <nav class="pageNav" aria-label="pageNav">
+                <ul id="pageNav-list" class="pageNav-list">
+                    <li class="pageNav-listItem"><a href="https://softcorpindustries.tech/index.html" target="_blank">Home</a></li>
+                    <li class="pageNav-listItem"><a href="https://softcorpindustries.tech/about.html" target="_blank">About</a></li>
+                    <li class="pageNav-listItem"><a href="https://softcorpindustries.tech/about.html#contact" target="_blank">Contact</a></li>
+                    <p class="cHeader">Chapters</p>
+                    <li class="pageNav-listItem"><a href="#forms">Forms</a></li>
+                    <li class="pageNav-listItem"><a href="#tables">Tables</a></li>
+                    <li class="pageNav-listItem"><a href="#uiForms">U.I. Forms</a></li>
+                    <li class="pageNav-listItem"><a href="#profileCards">Profile Forms</a></li>
+                </ul>
+            </nav>
+            <article class="top">
+                <h1 class="title">"Softcorp Industries"</h1>
                 <p id="greeting" class="greeting">Welcome</p>
-            </div>
-            <article class="landing__title">
-                <h1>"The Program"</h1>
             </article>
+            <section class="welcome">
+                <article class="welcome__header">
+                    <p>
+                    Welcome to the <span>"The Program"</span> web site, the third of three
+                    web sites that I'm building on my path to becoming a Front-End Web
+                    Developer. I've created this page to expand on more complex javaScript and pseudo database senarios.
+                    </p>
+              </article>
+            </section>
         </section>
     </header>
-    <section class="welcome">
-        <header class="featureHeader">
-            <h2>"Softcorp Industries"</h2>
-          </header>
-        <article class="welcome__header">
-            <p>
-            Welcome to the <span>"The Program"</span> web site, the third of three
-            web sites that I'm building on my path to becoming a Front-End Web
-            Developer. I've created this page to expand on more complex javaScript and pseudo database senarios.
-            </p>
-      </article>
-    </section>
     <section class="triple-container">
         <div class="tripleMonitors">
             <h2>Get with <span>"The Program"</span></h2>
