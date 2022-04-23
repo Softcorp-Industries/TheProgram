@@ -2,6 +2,7 @@
   --primaryBg: #e3e3e3;
   --secondaryClr: purple;
   --secondaryTxt: #C0FFF4;
+  --txtChange: #C0FFF4;
   --bgGradient: linear-gradient(to left top, var(--secondaryTxt), var(--secondaryClr));
   --jsThemeClr: yellow;
   --htmlThemeClr: orangered;
@@ -54,6 +55,7 @@ body[data-darkMode=darkMode] {
   --darkModeSec: #e3e3e3;
   --themeBg: black;
   --themeSec: yellow;
+  --txtChange: purple;
 }
 
 body[data-toggleTheme=dark] {
@@ -120,6 +122,10 @@ body[data-toggleMode=jsTheme] {
   box-sizing: border-box;
 }
 
+.darkModeFilter {
+  background-color: var(--bgFilterBlk);
+}
+
 body {
   background-color: var(--bgDarkMode);
 }
@@ -170,11 +176,6 @@ footer span {
     font-size: 28px;
   }
 }
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 32px;
-  }
-}
 .devBar-list .listItem {
   display: none;
 }
@@ -186,7 +187,7 @@ footer span {
 .devBar-bar.openFrontEnd .devBar-bar__btn {
   color: var(--darkModeBg);
   background-color: var(--darkModeBgOp);
-  box-shadow: 0px 0px 30px white;
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
   background-image: none;
 }
 
@@ -390,14 +391,14 @@ footer span {
   align-items: left;
   top: 1.5em;
   left: 0.75em;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
 .navBtn__menu__btn {
-  width: 1.2em;
-  height: 0.14em;
+  width: 2.25em;
+  height: 0.24em;
   border-radius: 25%;
   background-color: #C0FFF4;
   box-shadow: 0px 0px 2px var(--black);
@@ -405,18 +406,18 @@ footer span {
 .navBtn__menu__btn::after, .navBtn__menu__btn::before {
   content: "";
   position: absolute;
-  width: 1.2em;
-  height: 0.14em;
+  width: 2.25em;
+  height: 0.24em;
   border-radius: 25%;
   background-color: var(--secondaryClr);
   box-shadow: 0px 0px 2px var(--black);
   transition: all 0.5s ease-in-out;
 }
 .navBtn__menu__btn::before {
-  transform: translateY(-0.3em);
+  transform: translateY(-0.45em);
 }
 .navBtn__menu__btn::after {
-  transform: translateY(0.3em);
+  transform: translateY(0.45em);
 }
 
 .siteNav {
@@ -598,6 +599,24 @@ footer span {
           animation: navBarAn 300ms ease-in forwards;
   -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
+}
+.openNav .pageNav-listItem:nth-child(6) {
+  -webkit-animation: navBarAn 300ms ease-in forwards;
+          animation: navBarAn 300ms ease-in forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.openNav .pageNav-listItem:nth-child(7) {
+  -webkit-animation: navBarAn 300ms ease-in forwards;
+          animation: navBarAn 300ms ease-in forwards;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+.openNav .pageNav-listItem:nth-child(8) {
+  -webkit-animation: navBarAn 300ms ease-in forwards;
+          animation: navBarAn 300ms ease-in forwards;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 @-webkit-keyframes chapterH {
@@ -834,41 +853,49 @@ footer span {
     top: 105px;
   }
 }
-.landing__top {
+.landing {
   background-image: url("img/tech_img/imgix-1500.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
-  z-index: 1;
-  position: relative;
-  height: 55vw;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-  margin-bottom: -7vw;
 }
-.landing__title {
-  position: relative;
-  height: calc(5vw + 5em);
+
+.welcome p {
+  padding: 3em;
+  line-height: 1.4;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.welcome p span {
+  font-size: 1.75em;
+  color: var(--txtChange);
+  text-shadow: 0px 0px 2px var(--darkModeTxtClr);
+  font-family: "Audiowide";
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.welcome__header {
+  margin: auto;
+  width: 95%;
+  max-width: 800px;
+  color: var(--white);
+  text-shadow: 0px 0px 3px black;
+}
+
+.title {
+  padding-top: 0.25em;
   width: 100%;
-  z-index: 0;
-  background-image: linear-gradient(to left top, #C0FFF4, var(--secondaryClr));
   background-size: cover;
   background-position: top;
-  background-color: var(--themeBlk);
-  border-bottom: 3px solid var(--secondaryClr);
-  box-shadow: 0px 3px 3px #464646;
-}
-.landing__title h1 {
-  position: absolute;
-  width: 100%;
   text-align: center;
-  bottom: 0.75em;
-  font-weight: 900;
-  color: var(--white);
-  font-size: 1.2em;
-  letter-spacing: 0.25em;
   text-shadow: 0px 0px 7px var(--black);
+  color: var(--secondaryTxt);
+  font-weight: 900;
+  font-size: 2.75em;
+  font-family: "The Nautigal";
+  letter-spacing: 2px;
 }
 
 .banner__top {
@@ -936,7 +963,7 @@ footer span {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: calc(1vw + .5em);
+  bottom: calc(1vw + 0.5em);
   color: var(--jsThemeClr);
   font-size: calc(2vw + 1em);
   letter-spacing: 0.25em;
@@ -945,58 +972,26 @@ footer span {
 
 .greeting {
   width: 100%;
-  padding: 4em 0;
+  padding: 1em 0;
   text-align: center;
-  font-size: 18px;
-  font-family: "Bedrock";
-  color: var(--jsThemeClr);
-  text-shadow: 0px 0px 5px var(--black);
+  font-size: 1em;
+  font-family: "Audiowide";
+  color: #C0FFF4;
+  text-shadow: 0px 0px 3px var(--black);
   letter-spacing: 2px;
 }
 
-@media screen and (min-width: 310px) {
-  .landing__top h1 {
-    font-size: 1.5em;
-    padding-bottom: 10px;
-  }
-}
 @media screen and (min-width: 400px) {
-  .landing__top h2 {
-    font-size: 0.8em;
-  }
-  .landing__title {
-    height: calc(4vw + 4em);
-  }
-
   .banner__top {
     height: 15vw;
   }
 }
 @media screen and (min-width: 500px) {
-  .landing__top {
-    background-position: center;
-    background-size: cover;
-  }
-  .landing__top h1 {
-    font-size: 2em;
-  }
-  .landing__title h2 {
-    letter-spacing: 0.25em;
-  }
-
   .banner__title h2 {
     bottom: calc(0.5vw + 0.25em);
   }
 }
 @media screen and (min-width: 700px) {
-  .landing__top {
-    background-size: cover;
-    background-position: center;
-  }
-  .landing__title h1 {
-    font-size: 1.7em;
-  }
-
   .banner__top {
     height: 13vw;
     max-height: 130px;
@@ -1010,27 +1005,18 @@ footer span {
     height: calc(5.5vw + 6em);
     max-height: 130px;
   }
-
-  .greeting {
-    font-size: 26px;
-  }
 }
 @media screen and (min-width: 1024px) {
-  .landing__top {
-    height: 40vw;
+  .landing .title {
+    font-size: 4.5em;
   }
-  .landing__title {
-    height: 175px;
-    font-size: calc(1.75vw + 1em);
-    bottom: 20px;
+
+  .greeting {
+    font-size: 1.2em;
   }
 
   .banner__title h2 {
     bottom: calc(0.3vw + 0.2em);
-  }
-
-  .greeting {
-    font-size: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1466,7 +1452,7 @@ footer span {
   background-image: linear-gradient(to left top, #c0fff4, var(--secondaryClr));
   border-top: 3px solid var(--secondaryTxt);
   border-bottom: 3px solid var(--secondaryClr);
-  box-shadow: 0px 3px 3px #464646, 0px -3px 3px #464646;
+  box-shadow: 0px 3px 3px rgb(70, 70, 70), 0px -3px 3px rgb(70, 70, 70);
 }
 
 .tripleMonitors {
@@ -1567,38 +1553,6 @@ footer span {
   font-weight: 900;
   color: var(--secondaryTxt);
   letter-spacing: 4px;
-}
-
-.welcome p {
-  padding: 1em;
-  line-height: 1.4;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-}
-.welcome p span {
-  font-size: 1.5em;
-  color: #c0fff4;
-  font-family: "Audiowide";
-  text-shadow: 0px 0px 3px var(--black);
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-.welcome__header {
-  color: var(--darkModeTxtClr);
-  margin: auto;
-  width: 95%;
-  max-width: 800px;
-}
-
-.greeting {
-  width: 100%;
-  padding: 2.5em 0;
-  text-align: center;
-  font-size: 1.25em;
-  font-family: "Audiowide";
-  color: #C0FFF4;
-  text-shadow: 0px 0px 3px var(--black);
-  letter-spacing: 2px;
 }
 
 .showBtn {
