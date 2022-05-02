@@ -36,6 +36,9 @@
 .dmToggle.darkModeAnimRev{
   animation: dmAnimRev 500ms ease-in-out forwards;
 }
+.chapter {
+  padding-top: 1em;
+}
 .chapterHeader {
   color: var(--white);
   font-size: 2em;
