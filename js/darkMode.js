@@ -1,6 +1,6 @@
 // Dark Mode and Local Storage
 const darkModeBtn = document.getElementById("darkModeBtn");
-const darkModeLanding = document.getElementById("darkModeLanding");
+const darkModeFilter = document.getElementById("darkModeFilter");
 
 
 let darkModeSt = localStorage.getItem("darkModeSt");
@@ -10,7 +10,7 @@ const enableDarkMode = () => {
   darkModeBtn.style.backgroundImage = "url(img/icon/sun_light_mode_day-2-512.webp)"
   darkModeBtn.classList.add("darkModeAnim");
   darkModeBtn.classList.remove("darkModeAnimRev");
-  darkModeLanding.classList.add("darkModeFilter");
+  darkModeFilter.classList.add("darkModeFilter");
   localStorage.setItem("darkModeSt", "enabled");
 };
 const disableDarkMode = () => {
@@ -18,7 +18,7 @@ const disableDarkMode = () => {
   darkModeBtn.style.backgroundImage = "url(img/icon/936949-200.png)"
   darkModeBtn.classList.add("darkModeAnimRev");
   darkModeBtn.classList.remove("darkModeAnim");
-  darkModeLanding.classList.remove("darkModeFilter");
+  darkModeFilter.classList.remove("darkModeFilter");
   localStorage.setItem("darkModeSt", "disabled");
 };
 if (darkModeSt === "enabled") {
