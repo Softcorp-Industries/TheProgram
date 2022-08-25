@@ -9,7 +9,15 @@
   background-attachment: fixed;
   background-position: top;
 }
+.landingImg {
+  display: block;
+  margin: 1.5em auto;
+  opacity: 0.8;
+  width: calc(11vw + 11em);
+  border-radius: 0.25em;
+}
 .welcome {
+  min-height: 350px;
   p {
       padding: 3em;
       line-height: 1.4;
@@ -33,7 +41,7 @@
     }
   }
 .title {
-  padding-top: .25em;
+  padding-top: 1.5em;
   width: 100%;
   background-size: cover;
   background-position: top;
@@ -41,8 +49,8 @@
   text-shadow: 0px 0px 7px var(--darkModeBg);
   color: var(--txtChange);
   font-weight: 900;
-  font-size: 2.75em;
-  font-family: "The Nautigal";
+  font-size: 1.75em;
+  font-family: "Audiowide";
   letter-spacing: 2px;
 }
 .banner {
@@ -174,7 +182,8 @@
 @media screen and (min-width: 1024px) {
   .landing {
       .title {
-        font-size: 4.5em;
+        padding-top: 0.5em;
+        font-size: 3.25em;
       }
     }
     .greeting {

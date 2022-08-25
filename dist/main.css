@@ -460,7 +460,7 @@ footer span {
   height: 0.24em;
   border-radius: 25%;
   background-color: var(--secondaryClr);
-  box-shadow: 0px 0px 2px var(--black);
+  box-shadow: 0px 0px 2px var(--secondaryTxt);
   transition: all 0.5s ease-in-out;
 }
 .navBtn__menu__btn::before {
@@ -789,7 +789,6 @@ footer span {
   .featureHeader h1 span {
     font-size: 28px;
   }
-
   .navBarSite ul li a {
     height: 20px;
     font-size: 0.9em;
@@ -800,16 +799,13 @@ footer span {
     top: 40px;
     right: 10px;
   }
-
   .navBarBtn {
     left: 20px;
   }
-
   .navBarBtn-list {
     top: 115px;
     margin-left: -15px;
   }
-
   .navBarSite ul li a {
     min-width: 100px;
     height: 20px;
@@ -830,7 +826,6 @@ footer span {
     width: 25px;
     height: 25px;
   }
-
   .navBarBtn {
     left: 15px;
   }
@@ -848,7 +843,6 @@ footer span {
   .navBarBtn .navBarBtn-menu__btn::after {
     transform: translateY(8px);
   }
-
   .navBarBtn-list {
     top: 82px;
     margin-left: -5px;
@@ -859,7 +853,6 @@ footer span {
   .navBarBtn-list .cHeader {
     margin-bottom: 25px;
   }
-
   .navBarSite {
     max-width: 650px;
   }
@@ -874,7 +867,6 @@ footer span {
     top: 110px;
     text-align: center;
   }
-
   .navBarBtn {
     left: 25px;
     top: 25px;
@@ -910,6 +902,17 @@ footer span {
   background-position: top;
 }
 
+.landingImg {
+  display: block;
+  margin: 1.5em auto;
+  opacity: 0.8;
+  width: calc(11vw + 11em);
+  border-radius: 0.25em;
+}
+
+.welcome {
+  min-height: 350px;
+}
 .welcome p {
   padding: 3em;
   line-height: 1.4;
@@ -933,7 +936,7 @@ footer span {
 }
 
 .title {
-  padding-top: 0.25em;
+  padding-top: 1.5em;
   width: 100%;
   background-size: cover;
   background-position: top;
@@ -941,8 +944,8 @@ footer span {
   text-shadow: 0px 0px 7px var(--darkModeBg);
   color: var(--txtChange);
   font-weight: 900;
-  font-size: 2.75em;
-  font-family: "The Nautigal";
+  font-size: 1.75em;
+  font-family: "Audiowide";
   letter-spacing: 2px;
 }
 
@@ -1056,13 +1059,12 @@ footer span {
 }
 @media screen and (min-width: 1024px) {
   .landing .title {
-    font-size: 4.5em;
+    padding-top: 0.5em;
+    font-size: 3.25em;
   }
-
   .greeting {
     font-size: 1.2em;
   }
-
   .banner__title h2 {
     bottom: calc(0.3vw + 0.2em);
   }
@@ -1570,7 +1572,6 @@ footer span {
   .tripleMonitors h2:nth-last-child(1) {
     text-align: right;
   }
-
   .skills h1 {
     font-size: calc(1.5vw + 2rem);
   }
