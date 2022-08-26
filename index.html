@@ -18,69 +18,68 @@
   <body data-darkMode="light" data-theme="default">
     <section id="darkModeFilter">
       <header class="landing">
-        
-          <div class="darkMode" id="darkMode">
-            <button id="darkModeBtn" class="dmToggle"></button>
+        <div class="darkMode" id="darkMode">
+          <button id="darkModeBtn" class="dmToggle"></button>
+        </div>
+        <div class="navBtn">
+          <div class="navBtn__menu">
+            <div class="navBtn__menu__btn"></div>
           </div>
-          <div class="navBtn">
-            <div class="navBtn__menu">
-              <div class="navBtn__menu__btn"></div>
-            </div>
-          </div>
-          <nav class="pageNav" aria-label="pageNav">
-            <ul id="pageNav-list" class="pageNav-list">
-              <li class="pageNav-listItem">
-                <a
-                  href="https://softcorpindustries.tech/index.html"
-                  target="_blank"
-                  >Home</a
-                >
-              </li>
-              <li class="pageNav-listItem">
-                <a
-                  href="https://softcorpindustries.tech/about.html"
-                  target="_blank"
-                  >About</a
-                >
-              </li>
-              <li class="pageNav-listItem">
-                <a
-                  href="https://softcorpindustries.tech/about.html#contact"
-                  target="_blank"
-                  >Contact</a
-                >
-              </li>
-              <p class="cHeader">Chapters</p>
-              <li class="pageNav-listItem"><a href="#forms">Forms</a></li>
-              <li class="pageNav-listItem"><a href="#tables">Tables</a></li>
-              <li class="pageNav-listItem">
-                <a href="#uiForms">U.I. Forms</a>
-              </li>
-              <li class="pageNav-listItem">
-                <a href="#profileCards">Profile Forms</a>
-              </li>
-            </ul>
-          </nav>
-          <article class="top">
-            <h1 class="title">"Softcorp Industries"</h1>
-            <p id="greeting" class="greeting">Welcome</p>
-            <img
-          class="landingImg"
-          src="./img/tech_img/imgix-500px.jpg"
-          width="250"
-          alt=""
-        />
+        </div>
+        <nav class="pageNav" aria-label="pageNav">
+          <ul id="pageNav-list" class="pageNav-list">
+            <li class="pageNav-listItem">
+              <a
+                href="https://softcorpindustries.tech/index.html"
+                target="_blank"
+                >Home</a
+              >
+            </li>
+            <li class="pageNav-listItem">
+              <a
+                href="https://softcorpindustries.tech/about.html"
+                target="_blank"
+                >About</a
+              >
+            </li>
+            <li class="pageNav-listItem">
+              <a
+                href="https://softcorpindustries.tech/about.html#contact"
+                target="_blank"
+                >Contact</a
+              >
+            </li>
+            <p class="cHeader">Chapters</p>
+            <li class="pageNav-listItem"><a href="#forms">Forms</a></li>
+            <li class="pageNav-listItem"><a href="#tables">Tables</a></li>
+            <li class="pageNav-listItem">
+              <a href="#uiForms">U.I. Forms</a>
+            </li>
+            <li class="pageNav-listItem">
+              <a href="#profileCards">Profile Forms</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="top">
+          <h1 class="title">"Softcorp Industries"</h1>
+          <p id="greeting" class="greeting">Welcome</p>
+          <img
+            class="landingImg"
+            src="./img/tech_img/imgix-500px.jpg"
+            width="250"
+            alt=""
+          />
+        </article>
+        <section class="welcome">
+          <article class="welcome__header">
+            <p>
+              Welcome to the <span>"The Program"</span> web site, the third of
+              three web sites that I'm building on my path to becoming a
+              Front-End Web Developer. I've created this page to expand on more
+              complex javaScript and pseudo database senarios.
+            </p>
           </article>
-          <section class="welcome">
-            <article class="welcome__header">
-              <p>
-                Welcome to the <span>"The Program"</span> web site, the third of
-                three web sites that I'm building on my path to becoming a
-                Front-End Web Developer. I've created this page to expand on
-                more complex javaScript and pseudo database senarios.
-              </p>
-            </article>
-          </section>
+        </section>
       </header>
       <section class="triple-container">
         <div class="tripleMonitors">
@@ -101,22 +100,15 @@
       </section>
 
       <main>
-        <div class="project__header">
-          <div class="project__header__title">
-            <h2>New User Sign Up</h2>
-            <h5><span>Design by:</span> Softcorp Industries</h5>
-          </div>
-          <div class="project__header__body">
-            <article>
-              <h3>Synopsis:</h3>
-              <p>These Forms are created</p>
-            </article>
-            <div class="showBtn">
-              <button id="simpleFormBtn">Show</button>
+        <div class="newUser">
+          <div class="newUser__header">
+            <p class="newUser__header__title">New User</p>
+            <div class="newUser__header__btn">
+              <button id="simpleFormBtn">Sign Up</button>
             </div>
           </div>
         </div>
-        <section class="simpleForm">
+        <template class="simpleForm">
           <section class="wrapper">
             <div class="formBox">
               <form id="simpleForm" class="form">
@@ -162,14 +154,14 @@
               </form>
             </div>
           </section>
-        </section>
+        </template>
 
         <section class="theProgram">
           <section id="forms" class="forms">
             <div class="chapter">
-                <header class="featureHeader">
-                  <h2>Forms</h2>
-                </header>
+              <header class="featureHeader">
+                <h2>Forms</h2>
+              </header>
               <div class="chapter__header">
                 <div class="chapter__header__body">
                   <article>
@@ -183,21 +175,14 @@
               </div>
               <section class="project" id="formProjects">
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>New Employee Form</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">New Employee</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Forms are created</p>
-                    </article>
                     <div class="showBtn">
-                      <button id="NewEmployeeFormBtn">Show</button>
+                      <button id="NewEmployeeFormBtn">Add New Employee</button>
                     </div>
                   </div>
                 </div>
-                <section class="newEmployeeForm">
+                <template class="newEmployeeForm">
                   <section class="wrapper">
                     <div class="formBox">
                       <form id="newEmployee" class="form">
@@ -253,23 +238,17 @@
                       </form>
                     </div>
                   </section>
-                </section>
+                </template>
+
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>New Tool Form</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">New Tool</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Forms are created</p>
-                    </article>
                     <div class="showBtn">
-                      <button id="NewToolFormBtn">Show</button>
+                      <button id="NewToolFormBtn">Add New Tool</button>
                     </div>
                   </div>
                 </div>
-                <section class="newToolform">
+                <template class="newToolform">
                   <section class="wrapper">
                     <div class="formBox">
                       <form id="newTool" class="form">
@@ -325,23 +304,16 @@
                       </form>
                     </div>
                   </section>
-                </section>
+                </template>
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>New Vehicle Form</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">New Vehicle</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Forms are created</p>
-                    </article>
                     <div class="showBtn">
-                      <button id="NewVehicleFormBtn">Show</button>
+                      <button id="NewVehicleFormBtn">Add New Vehicle</button>
                     </div>
                   </div>
                 </div>
-                <section class="newVehicleform">
+                <template class="newVehicleform">
                   <section class="wrapper">
                     <div class="formBox">
                       <form id="newVehicle" class="form">
@@ -397,16 +369,16 @@
                       </form>
                     </div>
                   </section>
-                </section>
+                </template>
               </section>
             </div>
           </section>
 
           <section id="tables" class="tables">
             <div class="chapter">
-                <header class="featureHeader">
-                  <h2>Tables</h2>
-                </header>
+              <header class="featureHeader">
+                <h2>Tables</h2>
+              </header>
               <div class="chapter__header">
                 <div class="chapter__header__body">
                   <article>
@@ -420,15 +392,8 @@
               </div>
               <section class="project" id="tableProjects">
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>Employee Table</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">Employee Table</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Tables's are created</p>
-                    </article>
                     <div class="showBtn">
                       <button id="employeeTableBtn">Show</button>
                     </div>
@@ -486,16 +451,10 @@
                     </div>
                   </section>
                 </section>
+
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>Tool Table</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">Tool Table</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Tables's are created</p>
-                    </article>
                     <div class="showBtn">
                       <button id="toolTableBtn">Show</button>
                     </div>
@@ -545,16 +504,10 @@
                     </div>
                   </section>
                 </section>
+
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>Vehicle Table</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">Vehicle Table</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Tables's are created</p>
-                    </article>
                     <div class="showBtn">
                       <button id="vehicleTableBtn">Show</button>
                     </div>
@@ -618,9 +571,9 @@
 
           <section id="uiForms" class="uiForms">
             <div class="chapter">
-                <header class="featureHeader">
-                  <h2>Interactive Forms</h2>
-                </header>
+              <header class="featureHeader">
+                <h2>Interactive Forms</h2>
+              </header>
               <div class="chapter__header">
                 <div class="chapter__header__body">
                   <article>
@@ -637,83 +590,15 @@
               </div>
               <section class="project uiForms">
                 <div class="project__header">
-                  <div class="project__header__title">
-                    <h2>New User Form</h2>
-                    <h5><span>Design by:</span> Softcorp Industries</h5>
-                  </div>
+                  <p class="project__header__title">New Work Order</p>
                   <div class="project__header__body">
-                    <article>
-                      <h3>Synopsis:</h3>
-                      <p>These Forms are created</p>
-                    </article>
                     <div class="showBtn">
-                      <button id="uiFormV1Btn">Show</button>
+                      <button id="uiFormV1Btn">Create New Work Order</button>
                     </div>
                   </div>
                 </div>
                 <section class="uiFormV1" id="uiFormV1">
                   <section class="wrapper">
-                    <section class="tableBox">
-                      <h2>Version 1</h2>
-                      <table id="employeeTable" class="table employeeTable">
-                        <caption>
-                          Test Table
-                        </caption>
-                        <thead>
-                          <tr>
-                            <th>Employee ID</th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Contact #</th>
-                            <th>Email</th>
-                            <th>Admin</th>
-                            <th>Active</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>787757</td>
-                            <td>Lori</td>
-                            <td>Head Master</td>
-                            <td>411</td>
-                            <td>@ca.com</td>
-                            <td>yes</td>
-                            <td>yes</td>
-                          </tr>
-                          <tr>
-                            <td>751286</td>
-                            <td>Sheldon</td>
-                            <td>Field Supervisor</td>
-                            <td>780</td>
-                            <td>@ca.com</td>
-                            <td>no</td>
-                            <td>yes</td>
-                          </tr>
-                          <tr>
-                            <td>542288</td>
-                            <td>Christopher</td>
-                            <td>Service Tech Level-1</td>
-                            <td>587</td>
-                            <td>@ca.com</td>
-                            <td>no</td>
-                            <td>no</td>
-                          </tr>
-                          <tr>
-                            <td>752638</td>
-                            <td>Jane Doe</td>
-                            <td>Administrative Assistant</td>
-                            <td>404 Not Found</td>
-                            <td>@ca.com</td>
-                            <td>no</td>
-                            <td>no</td>
-                          </tr>
-                        </tbody>
-                        <button id="btnExportCsv" type="button" class="btn">
-                          Export to CSV
-                        </button>
-                      </table>
-                    </section>
-                    <br />
                     <section class="formBox">
                       <h2>Version 1</h2>
                       <form id="employeeForm" class="employeeForm form">
