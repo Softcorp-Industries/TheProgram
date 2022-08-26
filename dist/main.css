@@ -1080,16 +1080,9 @@ footer span {
   text-shadow: 0px 0px 5px var(--black);
   letter-spacing: 2px;
   color: white;
-  font-size: calc(1vw + 1em);
+  font-size: calc(2vw + 2em);
+  font-family: "Audiowide";
   margin-bottom: 5px;
-}
-.project__header__title h5 {
-  font-size: 12px;
-}
-.project__header__title h5 span {
-  color: var(--themeTxtClr);
-  text-shadow: none;
-  font-size: 16px;
 }
 .project__header__body {
   width: 95%;
@@ -1250,6 +1243,10 @@ footer span {
   font-size: calc(0.75vw + 0.75rem);
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+#employeeTable, #toolTable, #vehicleTable {
+  display: none;
 }
 
 .version {

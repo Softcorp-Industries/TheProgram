@@ -53,6 +53,9 @@
   }
 }
 
+#employeeTable, #toolTable, #vehicleTable{
+  display: none;
+}
 .version {
   margin: auto;
   width: 95vw;
